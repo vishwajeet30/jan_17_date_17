@@ -1,0 +1,26 @@
+<!doctype html>  
+<html lang="en">  
+   <head>  
+      <meta charset="utf-8">  
+      <title>jQuery UI Datepicker functionality</title>  
+      <link href="jquery-ui.css" rel="stylesheet">  
+      <script src="jquery-1.10.2.js"></script>  
+      <script src="jquery-ui.js"></script>  
+      <!-- Javascript -->  
+        <script>  
+         $(function() {  
+            $( "#datepick-1" ).datepicker({  
+               appendText:"(yy-mm-dd)",  
+               dateFormat:"yy-mm-dd",  
+               altField: "#datepick-2",  
+               altFormat: "DD, d MM, yy"  
+            });  
+         });  
+      </script>  
+   </head>  
+   <body>  
+      <!-- HTML -->   
+      <p>Date of Birth: <input type="text" id="datepick-1"></p>  
+      <p>Your DOB: <input type="text" id="datepick-2" size="35"></p>  
+   </body>  
+</html>
